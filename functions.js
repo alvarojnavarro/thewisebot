@@ -48,7 +48,7 @@ var doubtKey = /(I don't know|I'm not sure)/g;
 var assumKey = /(I think|don't know|assume|I guess|trust|don't trust|doesn't trust)/g;
 
 var famKey = /(sister|mother|mom|father|dad|brother|stepmother|stepmom|stepfather|stepdad)/g;
-var romKey = /(partner|spouse|wife|husband|boyfriend|girlfriend|I like someone|I like a girl|I like a boy|date|dating|ex girlfriend|ex boyfriend|love)/g;
+var romKey = /(partner|spouse|wife|husband|boyfriend|girlfriend|I like someone|I like a girl|I like a boy|date|dating|ex girlfriend|ex boyfriend|love|significant other)/g;
 var othKey = /(friend|friends|roommate|roommates|roommy)/g;
 
 $(document).ready(function() { 
