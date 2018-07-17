@@ -44,7 +44,7 @@ a:focus:before {
 }
 textarea {
 	border: none;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	background-color: black;
 	color: white;
 }
