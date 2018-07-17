@@ -1,0 +1,66 @@
+*:focus {
+	outline: none;
+}
+html {
+	background-color: black;
+}
+body {
+	min-height: 100vh;
+	background-color: black;
+	font-family: 'Georgia', Times New Roman, Times;
+	color: white;
+}
+a,
+a:hover,
+a:focus {
+	text-decoration: underline;
+	color: white;
+	position: relative;
+	padding: 0 0 0.1rem 0;
+}
+a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before,
+a:focus:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.intro,
+.advice {
+	margin: 3rem 0;
+}
+textarea {
+	border: none;
+	font-size: 2rem;
+	background-color: black;
+	color: white;
+}
+textarea:focus {
+	outline: none;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3rem;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #333030;
+}
+footer a {
+	color: #333030;
+}
