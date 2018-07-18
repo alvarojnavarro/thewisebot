@@ -62,3 +62,10 @@ footer {
 footer a {
 	color: #444040;
 }
+
+
+@media (min-width: 768px) {
+	.intro {
+		margin: 0;
+	}
+}
