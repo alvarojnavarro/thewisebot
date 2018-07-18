@@ -30,9 +30,10 @@ var doubtOther = [
 	"If you search everywhere, yet cannot find what you are seeking, it is because what you seek is already in your possession.<br> – Lao Tzu",
 	"Truth hurts; Doubt ruins; Lie destroys.<br> – Unknown",
 ];
-var Others = [
+var others = [
 	"At the center of your being you have the answer; you know who you are and you know what you want.<br> – Lao Tzu",
-	""
+	"If you search everywhere, yet cannot find what you are seeking, it is because what you seek is already in your possession.<br> – Lao Tzu",
+	
 ];
 var error = [
 	"It seems I don't have an answer for that yet.<br/>Please try again.",
@@ -93,22 +94,25 @@ $(document).ready(function() {
 			}
 			//everybody
 			else {
-				$(".advice").append(assumOther[Math.floor(Math.random()*assumOther.length)]);	
+				$(".advice").append(assumOther[Math.floor(Math.random()*assumOther.length)]);
 			}
 		}
-		//if the problem doesn't fit any category but includes people
-		else if( ( problem.search(famKey) >-1 ) || ( problem.search(romKey) >-1 ) || ( problem.search(othKey) >-1 )  ){
-			$(".advice").append(Others);
-		}
 		else {
-			$(".advice").append(error[n]);
-			n++;
-			if (n==4) {
-				setTimeout(function() {
-					$("article").remove();
-				}, 700);
-			};
+			$(".advice").append(others[Math.floor(Math.random()*others.length)]);
 		}
+		//if the problem doesn't fit any category but includes people
+		// else if( ( problem.search(famKey) >-1 ) || ( problem.search(romKey) >-1 ) || ( problem.search(othKey) >-1 )  ){
+		// 		$(".advice").append(others[Math.floor(Math.random()*others.length)]);
+		// }
+		// else {
+		// 	$(".advice").append(error[n]);
+		// 	n++;
+		// 	if (n==4) {
+		// 		setTimeout(function() {
+		// 			$("article").remove();
+		// 		}, 700);
+		// 	};
+		// }
 	});
 
 });
