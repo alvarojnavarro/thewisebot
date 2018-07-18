@@ -38,7 +38,6 @@ a:focus:before {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
-.intro,
 .advice {
 	margin: 3rem 0;
 }
@@ -66,6 +65,6 @@ footer a {
 
 @media (min-width: 768px) {
 	.intro {
-		margin: 0;
+		margin-top: 3rem;
 	}
 }
